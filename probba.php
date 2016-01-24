@@ -41,6 +41,14 @@ $user="Mamba";
 $txt="Hi $user you are .... as a $role in $course for $duration";
 echo "<p id='value'>".$txt."</p>";
 
+//second value
+$role="lector";
+$course="course 2";
+$duration=5;
+$user="Samba";
+$txt="Hi $user you are .... as a $role in $course for $duration";
+echo "<p id='value'>".$txt."</p>";
+
 
 
 ?>
