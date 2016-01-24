@@ -27,6 +27,8 @@ $second="1st";
 $third="World";
 
 echo "<p id='a'>".$first."</p><p id='b'>".$second."</p><p id='c'>".$third."</p>";
+echo "i'v gone to the store."." ";
+echo '"text"';
 
 
 ?>
