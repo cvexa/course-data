@@ -17,6 +17,10 @@
 	#value{
 		font-size: 22px;
 	}
+	#value2{
+		font-size: 27px;
+		color:red;
+	}
 	</style>
 </head>
 <body>
@@ -47,7 +51,7 @@ $course="course 2";
 $duration=5;
 $user="Samba";
 $txt="Hi $user you are .... as a $role in $course for $duration";
-echo "<p id='value'>".$txt."</p>";
+echo "<p id='value2'>".$txt."</p>";
 
 
 
