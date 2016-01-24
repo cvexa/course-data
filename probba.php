@@ -14,6 +14,9 @@
 	body{
 		background-color: grey;
 	}
+	#value{
+		font-size: 22px;
+	}
 	</style>
 </head>
 <body>
@@ -29,6 +32,15 @@ $third="World";
 echo "<p id='a'>".$first."</p><p id='b'>".$second."</p><p id='c'>".$third."</p>";
 echo "i'v gone to the store."." ";
 echo '"text"';
+
+//first value
+$role="student";
+$course="course 1";
+$duration=4;
+$user="Mamba";
+$txt="Hi $user you are .... as a $role in $course for $duration";
+echo "<p id='value'>".$txt."</p>";
+
 
 
 ?>
