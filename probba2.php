@@ -18,19 +18,26 @@ header('content-type:text/html; charset=utf-8');
 
 
 //newtask
-$a=rand(1,80);
-$b="school";
-$c="retire";
+$var = 'o';
 
-echo $a.' ';
-if($a < 18 ){
-	echo "$b";
-}else{
-	echo "$c";
+switch ($var) {
+	case 'a':
+		echo "vocal";
+		break;
+	case 'e':
+		echo "vocal";
+		break;
+	case 'o':
+		echo "vocal";
+		break;
+	case 'i':
+		echo "vocal";
+		break;		
+	
+	default:
+		echo "constant";
+		break;
 }
-
-
-
 
 ?>
 </body>
