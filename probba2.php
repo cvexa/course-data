@@ -1,6 +1,6 @@
 <!html>
 <head>
-	<title>Probba php</title>
+	<title>Probba2 php</title>
 	<style type="text/css">
 	body{
 		background-color: grey;
