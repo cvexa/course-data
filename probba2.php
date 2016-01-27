@@ -18,25 +18,27 @@ header('content-type:text/html; charset=utf-8');
 
 
 //newtask
-$var = 'o';
+$var = 'sun';
 
 switch ($var) {
-	case 'a':
-		echo "vocal";
-		break;
-	case 'e':
-		echo "vocal";
-		break;
-	case 'o':
-		echo "vocal";
-		break;
-	case 'i':
-		echo "vocal";
-		break;		
-	
-	default:
-		echo "constant";
-		break;
+	case 'mon':
+		
+		
+	case 'tue':
+		
+		
+	case 'wed':
+		
+		
+	case 'thu':
+		
+	case 'fri':
+		echo "Work day";	
+		break;	
+	case 'sat':
+	case 'sun':
+	    echo "Holiday";	
+	    break;		
 }
 
 ?>
