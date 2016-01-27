@@ -40,7 +40,7 @@ $duration=4;
 $user="Mamba";
 $txt="Hi $user you are .... as a $role in $course for $duration";
 echo "<p id='value'>".$txt."</p>";
-
+asdasd
 
 
 ?>
