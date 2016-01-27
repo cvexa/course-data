@@ -18,19 +18,17 @@ header('content-type:text/html; charset=utf-8');
 
 
 //newtask
-$a=rand(0,100);
-$b=rand(0,100);
-$c=$a+$b;
+$a=rand(1,80);
+$b="school";
+$c="retire";
 
-echo $a.' '.$b;
-
-if ($c % 2 ==0){
-	echo ' $a+$b ='.$c." Even";
-}elseif ($c % 2 != 0) {
-	echo ' $a+$b ='.$c." Odd";
+echo $a.' ';
+if($a < 18 ){
+	echo "$b";
 }else{
-	echo ' $a+$b =' .$c. ' $a = faill';
+	echo "$c";
 }
+
 
 
 
