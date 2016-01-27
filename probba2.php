@@ -13,17 +13,23 @@
 <?php
 
 header('content-type:text/html; charset=utf-8');
-$a=rand(0,100);
 
-if ($a % 2 ==0){
-	echo '$a ='.$a." even";
-	if ($a === 0){
-		echo "$a = 0";
-	}
-}elseif ($a % 2 != 0) {
-	echo '$a ='.$a." Odd";
+
+
+
+//newtask
+$a=rand(0,100);
+$b=rand(0,100);
+$c=$a+$b;
+
+echo $a.' '.$b;
+
+if ($c % 2 ==0){
+	echo ' $a+$b ='.$c." Even";
+}elseif ($c % 2 != 0) {
+	echo ' $a+$b ='.$c." Odd";
 }else{
-	echo '$a=' .$a. ' $a = 0';
+	echo ' $a+$b =' .$c. ' $a = faill';
 }
 
 
