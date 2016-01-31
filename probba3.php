@@ -56,7 +56,7 @@ echo "<tr>";
 echo "<td>Burgas</td>";
 echo "<td>".$city_data['Burgas']."</td>";
 echo "</tr>";
-echo "</p></table>"
+echo "</p></table>";
 
 ?>
 </body>
