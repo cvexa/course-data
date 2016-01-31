@@ -22,9 +22,14 @@ echo "<p><input type='password' name='password' placeholder='password'></p>";
 echo "<input type='submit' name='submit' value='register'>";
 echo "</form>";
 
-echo "<pre>";
+/*echo "<pre>";
 var_dump($_POST);
 echo "</pre>" ;
+*/
+
+if (!empty($_POST['submit'])) {
+	echo $_POST['username'];
+}
 
 ?>
 </body>
