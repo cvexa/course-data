@@ -34,11 +34,11 @@ $city_data = array('Vratsa' => "3000" ,
                    'Sofia' => "5000" ,
                    'Burgas' => "1000");
 
-echo "<p><ul>";
+echo "<p><ol type='1'>";
 echo "<li>City Vratsa - ".$city_data['Vratsa']."</li>";
 echo "<li>City Sofia - ".$city_data['Sofia']."</li>";
 echo "<li>City Burgas - ".$city_data['Burgas']."</li>";
-echo "</p></ul>";
+echo "</p></ol>";
 
 echo "<p><table border='1'>";
 echo "<tr>";
