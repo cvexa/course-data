@@ -18,22 +18,34 @@
 
 
 
-if (!empty($_POST['submit'])) {
-	$firstname=$_POST['first_name'];
-    $favcity=$_POST['city'];
-	
-echo "Hello".$firstname."your favorite city is -".$favcity;
-} else{
 
 
 
-echo "<p>Enter Name and Favorite City</p>";
+
+echo "<p>Enter User Name and Password</p>";
 echo "<form action='probba3.php' method='post'>";
-echo "<input type='text' name='first_name' placeholder='First Name'>";
-echo "<p><input type='text' name='city' placeholder='City'></p>";
-echo "<input type='submit' name='submit' value='Send'>";
+echo "<input type='text' name='user' placeholder='User Name'>";
+echo "<p><input type='password' name='password' placeholder='password'></p>";
+echo "<input type='submit' name='submit' value='register'>";
 echo "</form>";
+
+
+$passw=12345;
+if (!empty($_POST['submit'])) {
+	
+
+ if ($_POST['password'] == $passw) {
+ 	
+    $name=$_POST['user'];
+    $pass=$_POST['password'];
+	
+ 	
+	echo "Hello"." ".$name;
+} else{
+	echo "Wrong password";
 }
+}	
+
 
 
 
