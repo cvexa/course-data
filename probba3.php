@@ -16,20 +16,27 @@
 
 header('content-type:text/html; charset=utf-8');
 
-echo "<form action='probba3.php' method='post'>";
-echo "<input type='text' name='username' placeholder='username'>";
-echo "<p><input type='password' name='password' placeholder='password'></p>";
-echo "<input type='submit' name='submit' value='register'>";
+echo "<p>Check for valid triangle:</p>";
+echo "<form action='probba3.php' method='get'>";
+echo "<input type='text' name='angleA' placeholder='First Angle'>";
+echo "<p><input type='text' name='angleB' placeholder='Second Angle'></p>";
+echo "<p><input type='text' name='angleC' placeholder='Third Angle'></p>";
+echo "<input type='submit' name='submit' value='check'>";
 echo "</form>";
 
-/*echo "<pre>";
-var_dump($_POST);
-echo "</pre>" ;
-*/
+if (!empty($_GET['submit'])) {
+	$angleA = $_GET['angleA'];
+	$angleB = $_GET['angleB'];
+	$angleC = $_GET['angleC'];
 
-if (!empty($_POST['submit'])) {
-	echo "Hello".$_POST['username'];
-}
+	$sum = $angleA + $angleB + $angleC;
+	if ($sum == 180) {
+		echo "Valid";
+	}else{
+		echo "Not Valid";
+	}
+}	
+
 
 ?>
 </body>
