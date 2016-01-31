@@ -28,7 +28,7 @@ echo "</pre>" ;
 */
 
 if (!empty($_POST['submit'])) {
-	echo $_POST['username'];
+	echo "Hello".$_POST['username'];
 }
 
 ?>
