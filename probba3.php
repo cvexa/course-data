@@ -37,7 +37,7 @@ if (!empty($_POST['submit'])) {
  if ($_POST['password'] == $passw) {
  	
     $name=$_POST['user'];
-    $pass=$_POST['password'];
+    
 	
  	
 	echo "Hello"." ".$name;
