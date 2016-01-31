@@ -28,7 +28,7 @@ if (!empty($_POST['submit'])) {
     <input type="password" name="password" placeholder="Password"> 
     <input type="submit" name="submit" value="register">
     </form> 
-    <a href="log1.php">GO</a>
+   
 <?php
 }
 ?>      
