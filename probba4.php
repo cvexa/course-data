@@ -10,40 +10,35 @@
 </head>
 <body>
 
-
+<form action="probba4.php" method="post">
+	<select>
+		<option value="Netherland" name="a">Холандия</option>
+		<option value="Bulgaria" name="a">България</option>
+		<option value="France" name="a">Франция</option>
+	</select>
+	<input type="submit" name="submit" value="submit">
+</form>	
 <?php
 
+$a=$_POST['a'];
+
+if (!empty ($_POST['submit'])) {
+	if ($a == $value) {
+		# code...
+	
+	$arr = array('Netherland' => 'Амстердам' ,
+	             'Bulgaria' => 'София' ,
+	             'France' => 'Париж' ,);
+	foreach ($arr and $key => $value) {
+		echo "$key e $value";
+	}
+}
+}
 //firsttask
- $arr = array('Холандия' => 'Амстердам' ,
-               'България' => 'София',
-               'Франция' => 'Париж', );
-echo "<ol type='i'>";
-foreach ($arr as $key => $value) {
-	
-	echo "<li>Столицата на $key е $value</li>";
-		
-}
-echo "</ol>";
-
-//second task
-$arr = array('Пешо','Иван','Петър' );
-
-foreach ($arr as $key => $value) {
-	
-	echo "$value е мой приятел, ";
-}
+ 
 
 
-//task 3
 
-$mul=1;
-
-$num = array('1','2','3','4');
-
-foreach ($num as $value) {
-	$mul *= $value;
-}
-echo '<p>'. $mul .'</p>';
 
 
 
