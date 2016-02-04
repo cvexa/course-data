@@ -8,34 +8,23 @@
 	}
 	</style>
 </head>
-<body>
 
-<form action="probba4.php" method="post">
-	<select>
-		<option value="Netherland" name="a">Холандия</option>
-		<option value="Bulgaria" name="a">България</option>
-		<option value="France" name="a">Франция</option>
-	</select>
-	<input type="submit" name="submit" value="submit">
-</form>	
 <?php
 
-$a=$_POST['a'];
+$a=1;
+$max=99;
 
-if (!empty ($_POST['submit'])) {
-	if ($a == $value) {
-		# code...
-	
-	$arr = array('Netherland' => 'Амстердам' ,
-	             'Bulgaria' => 'София' ,
-	             'France' => 'Париж' ,);
-	foreach ($arr and $key => $value) {
-		echo "$key e $value";
+echo "<ul><li>";
+while ($a <= $max) {
+	echo $a." ";
+	$a++;
+	if ($a % 5 == 0) {
+		echo "</li><li>";
 	}
+	$a++;
 }
-}
-//firsttask
- 
+echo "</li></ul>";
+
 
 
 
