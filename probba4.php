@@ -12,16 +12,16 @@
 <?php
 
 $a=1;
-$max=99;
+$max=100;
 
 echo "<ul><li>";
 while ($a <= $max) {
 	echo $a." ";
-	$a++;
-	if ($a % 5 == 0) {
+	
+	if (($a+1) % 10 == 0) {
 		echo "</li><li>";
 	}
-	$a++;
+	$a+=2;
 }
 echo "</li></ul>";
 
