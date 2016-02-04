@@ -16,7 +16,7 @@ session_start();
 if (!empty($_POST['submit'])) {
 	$_SESSION['user_name'] = $_POST['user_name'];
 	echo "Hello"." ".$_SESSION['user_name']." ";
-	echo '<a href="log1.php">GO</a>';
+	
 }else{
 ?>	
 
