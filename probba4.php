@@ -25,6 +25,14 @@ foreach ($arr as $key => $value) {
 }
 echo "</ol>";
 
+//second task
+$arr = array('Пешо','Иван','Петър' );
+
+foreach ($arr as $key => $value) {
+	
+	echo "$value е мой приятел, ";
+}
+
 
 
 
