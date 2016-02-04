@@ -34,7 +34,16 @@ foreach ($arr as $key => $value) {
 }
 
 
+//task 3
 
+$mul=1;
+
+$num = array('1','2','3','4');
+
+foreach ($num as $value) {
+	$mul *= $value;
+}
+echo '<p>'. $mul .'</p>';
 
 
 
