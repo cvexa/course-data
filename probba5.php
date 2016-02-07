@@ -11,16 +11,17 @@
 
 <?php
 
-$arr = array();
+$n = 1;
+for ($j=0; $j < 30; $j++) { 
+	echo "<p> $j - row ";
 
-for ($i=0; $i <100 ; $i++) { 
 
-	$arr[$i] = rand(1,1000);
-	echo $arr[$i].' ';
+for ($i=1; $i <=10  ; $i++) { 
+    echo $n." ";
+    $n++;
 }
-$count = count($arr);
-
-echo "Array elements count ". $count;
+}
+echo "</p>";
 
 
 
