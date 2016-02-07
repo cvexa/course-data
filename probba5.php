@@ -11,22 +11,16 @@
 
 <?php
 
-$a =rand(10,100);
-$b =rand(100,200);
+$arr = array();
 
+for ($i=0; $i <100 ; $i++) { 
 
-for ($x=$a; $x <=$b ; $x++) { 
-	    if ($x%3 == 0) {
-	    	echo "<p>$x се дели на 3</p>".'' ;
-	    }elseif($x%7 == 0)
-		echo "<p>$x се дели на 7</p>";
-	    }
+	$arr[$i] = rand(1,1000);
+	echo $arr[$i].' ';
+}
+$count = count($arr);
 
-	    echo "$a - $b";
-
-
-
-
+echo "Array elements count ". $count;
 
 
 
