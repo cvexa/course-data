@@ -11,19 +11,15 @@
 
 <?php
 
-$a=1;
-$max=100;
+$sum = 0;
 
-echo "<ul><li>";
-while ($a <= $max) {
-	echo $a." ";
-	
-	if (($a+1) % 10 == 0) {
-		echo "</li><li>";
-	}
-	$a+=2;
+
+for ($a=1; $a <=100 ; $a++) { 
+	echo $a.' ';
+	$sum+=$a;
+
 }
-echo "</li></ul>";
+echo "<p> $sum е сумата.</p>";
 
 
 
