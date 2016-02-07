@@ -38,7 +38,9 @@ switch ($var) {
 	case 'sat':
 	case 'sun':
 	    echo "Holiday";	
-	    break;		
+	    break;	
+	default : 
+		echo "Wrong value";
 }
 
 ?>
