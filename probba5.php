@@ -13,7 +13,8 @@
 
 $n = 1;
 for ($j=0; $j < 30; $j++) { 
-	echo "<p> $j - row ";
+	$num = ($j+1);
+	echo "<p>$num - row - ";
 
 
 for ($i=1; $i <=10  ; $i++) { 
