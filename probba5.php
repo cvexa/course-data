@@ -10,19 +10,20 @@
 </head>
 
 <?php
+echo "<table border='1'>";
+$m = 3;
+$n = 4;
+for ($j=1; $j <=$m; $j++) { 
+     echo "<p><tr>";	
 
-$n = 1;
-for ($j=0; $j < 30; $j++) { 
-	$num = ($j+1);
-	echo "<p>$num - row - ";
 
-
-for ($i=1; $i <=10  ; $i++) { 
-    echo $n." ";
-    $n++;
+for ($i=1; $i <=$n  ; $i++) { 
+    echo "<td>$j,$i</td>";
+    
 }
 }
-echo "</p>";
+echo "</p></tr>";
+echo "</table>";
 
 
 
