@@ -16,22 +16,20 @@
 
 
 
-<p><ul class="nav nav-pills" action="probba6_1.php" name"="button">
-  <li><button type="button" class="btn btn-success">Бутон</button></li>
-  <li><button type="button" class="btn btn-success">Бутон2</button></li>
-  <li><button type="button" class="btn btn-success">Бутон3</button></li>
-  </ul></p>
+<p><ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul></p>
 </body>
 </html>
 <?php
 
-$arr = array('Бутон' =>'Hello' ,
-             'Бутон2' =>'Hello2',
-             'Бутон3' =>'Hello3' );
-echo '<ul class="nav nav-pills">';
+$arr = array("HOME","Profile","Messages" );
+echo '<ul class="nav nav-tabs">';
 foreach ($arr as $value) {
 	
-		echo '<li role="btn btn-success">'.$value.'</li>';
+		echo '<li role="presentation"><a href="#">'.$value.'</a></li>';
 	
 }
 echo '</ul>'
