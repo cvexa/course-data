@@ -16,24 +16,18 @@
 
 
 
-<p><ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="#">Home</a></li>
-  <li role="presentation"><a href="#">Profile</a></li>
-  <li role="presentation"><a href="#">Messages</a></li>
-</ul></p>
+<p><div class="col-xs-4">asdasda sdasd</div>
+<div class="col-xs-4">asdasdas dasd</div></p>
+
+<p><div class="col-xs-3 col-md-offset-2">asda sdasdasd</div>
+<div class="col-xs-3 col-md-offset-2">asdasdas dasd</div></p>
+</body>
 </body>
 </html>
-<?php
 
-$arr = array("HOME","Profile","Messages" );
-echo '<ul class="nav nav-tabs">';
-foreach ($arr as $value) {
-	
-		echo '<li role="presentation"><a href="#">'.$value.'</a></li>';
-	
-}
-echo '</ul>'
-?>
+
+
+
 
 
 
