@@ -21,6 +21,42 @@ for ($i=0; $i < ($count-1) ; $i++) {
 }
 echo $chek;
 
+
+$n = 7;
+$n1 = $n;
+$x = 1;
+$y = 1;
+echo "<table border = 1>";
+while ( $y <= $n1) {
+	echo "<tr>";
+	while ($x <= $n) {
+		echo '<td>'.$x.' ';
+		$x++;
+		echo '</td>';
+	}
+	echo "</tr>";
+	$y++;
+	$x = $y;
+	$n++;	
+}
+echo "</table>";
+
+
+$n = "a";
+$x = 1;
+$c = 1;
+  
+while ( $x <= 29) {
+	while ( $c<= $x) {
+		echo $n;
+		$c++;
+	}
+	echo "<br>";
+	$c = 1;
+	$x++;
+}
+
+
 ?>
 </body>
 </html>
