@@ -42,12 +42,31 @@ for ($i=0; $i < $count; $i++) {
 	echo "</tr>";
 }
 echo '</table>';
-echo "$sum profit from all";
+echo "<p>$sum profit from all</p>";
 
-/*echo '<pre>';
-var_dump($cars);
-echo '</pre>';
-*/
+$m=4;
+$n=4;
+$num1=1;
+$num2=$m*$n;
+
+$arr=array(array());
+for ($i=0; $i <$m ; $i++) { 
+	for ($j=0; $j <$n ; $j++) { 
+		$arr[$i][$j]=$num2;
+		$num2--;
+	}
+}
+echo "<table border='1'>";
+for ($l=0; $l < $m ; $l++) { 
+	echo "<tr>";
+	for ($p=0; $p < $n ; $p++) { 
+		echo "<td>".$arr[$l][$p]."</td>";
+	}
+	echo "</tr>";
+}
+echo "</table>";
+
+
 ?>
 </body>
 </html>
