@@ -17,6 +17,9 @@ $cars=array(array('brand' =>'vw' ,'model' =>'polo','color'=>'grey','price'=>'25.
             );
 
 $count=count($cars);
+for ($j=0; $j <$count ; $j++) { 
+	$cars[$j]['profit']=$cars[$j]['price']*$cars[$j]['sold'];
+}
 echo '<table border="1">';
 echo "<tr>";
 echo "
@@ -25,9 +28,11 @@ echo "
 <td>color</td>
 <td>price</td>
 <td>sold</td>
+<td>profit</td>
 ";
 echo "</tr>";
 for ($i=0; $i < $count; $i++) { 
+	$n=$i+1;
 	echo "<tr>";
 	foreach ($cars[$i] as $value) {
 		echo "<td>".$value."</td>";
@@ -35,6 +40,17 @@ for ($i=0; $i < $count; $i++) {
 	echo "</tr>";
 }
 echo '</table>';
+for ($i=0; $i < $count ; $i++) { 
+	
+
+
+
+}
+
+/*echo '<pre>';
+var_dump($cars);
+echo '</pre>';
+*/
 ?>
 </body>
 </html>
