@@ -45,26 +45,32 @@ echo '</table>';
 echo "<p>$sum profit from all</p>";
 
 $m=4;
-$n=4;
+$n=10;
 $num1=1;
 $num2=$m*$n;
 
+
+
 $arr=array(array());
-for ($i=0; $i <$m ; $i++) { 
+for ($i=0; $i <$m ; $i+=2) { 
 	for ($j=0; $j <$n ; $j++) { 
-		$arr[$i][$j]=$num2;
-		$num2--;
+		$arr[$i][$j]=$num1;
+		$num1++;
 	}
 }
-echo "<table border='1'>";
-for ($l=0; $l < $m ; $l++) { 
+echo "<p><table border='1'>";
+for ($l=0; $l < $m ; $l+=2) { 
 	echo "<tr>";
-	for ($p=0; $p < $n ; $p++) { 
+	for ($p=0; $p < $n ; $p+=2) { 
 		echo "<td>".$arr[$l][$p]."</td>";
 	}
 	echo "</tr>";
 }
-echo "</table>";
+echo "</table></p>";
+
+
+
+
 
 
 ?>
