@@ -10,7 +10,11 @@
 </head>
 
 <?php
-
+$cars=array(array('brand' =>'vw' ,'model' =>'polo','color'=>'grey','price'=>'25.000' ),
+            array('brand' =>'skoda' ,'model' =>'yeti','color'=>'white','price'=>'33.000' ),
+            array('brand' =>'mazda' ,'model' =>'rx8','color'=>'green','price'=>'55.000' ),
+            array('brand' =>'opel' ,'model' =>'kadet','color'=>'blue','price'=>'100.000' ),
+            );
 
 
 ?>
