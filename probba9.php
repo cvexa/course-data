@@ -1,27 +1,28 @@
 <?php header('content-type:text/html; charset=utf-8');
 
-function print_text($param1, $param2,$text){
-	echo $param1;
-	for ($i=0; $i <10 ; $i++) { 
-	echo $text;
+function print_calc($a, $b){
+	$num=$a+$b;
 	
+	echo $a. "+" .$b. "=" .$num." ";
+	
+
+
 }
-echo $param2;
-}
+$a=2;
+$b=3;
+$c=4;
+$d=2;
+$f=15;
+$g=22;
+
+print_calc($a,$b);
+print_calc($c,$d);
+print_calc($f,$g);
 
 
 
 
 
-print_text('<p>','</p>','HELLO!');
-$a='<h1>';
-$b='</h1>';
-$c='Bye';
-$d="<table border='1'><tr>";
-$e="</table>";
-$f="<td>Hi </td>";
-print_text($a,$b,$c);
-print_text($d,$e,$f)
 
 
 
