@@ -1,23 +1,28 @@
 <?php header('content-type:text/html; charset=utf-8');
 
-function print_text(){
+function print_text($param1, $param2,$text){
+	echo $param1;
 	for ($i=0; $i <10 ; $i++) { 
-	echo "hello ! ";
+	echo $text;
+	
 }
+echo $param2;
 }
 
 
-echo "<table border='1'><tr>";
-for ($i=0; $i <10 ; $i++) { 
-	echo "<td>HELLO ! </td>";
-}
-echo "</table>";
-echo "<p>";
-print_text();
-echo "</p>";
-echo "<h1>";
-print_text();
-echo "</h1>";
+
+
+
+print_text('<p>','</p>','HELLO!');
+$a='<h1>';
+$b='</h1>';
+$c='Bye';
+$d="<table border='1'><tr>";
+$e="</table>";
+$f="<td>Hi </td>";
+print_text($a,$b,$c);
+print_text($d,$e,$f)
+
 
 
 
