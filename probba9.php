@@ -61,13 +61,20 @@ echo $sum;
 echo $new2;
 }
 $arr = range(1,10);
-	sort($arr);
-	print_r($arr);
+	
+	
 $new1='<p>';
 $new2='</p>';
-
-
+$arr2=range(20,50);
+echo "<pre>";
+print_r($arr);
+echo "</pre>";
 new_fun($arr,$new1,$new2);
+
+echo "<pre>";
+print_r($arr2);
+echo "</pre>";
+new_fun($arr2,$new1,$new2);
 
 
 
