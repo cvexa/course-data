@@ -1,5 +1,6 @@
 <?php header('content-type:text/html; charset=utf-8');
 
+//task02
 function print_calc($a, $b){
 	$num=$a+$b;
 	
@@ -19,7 +20,7 @@ print_calc($a,$b);
 print_calc($c,$d);
 print_calc($f,$g);
 
-
+//task04
 function math($m,$n,$param1, $param2){
 	echo $m;
 	if ($param1 < $param2) {
@@ -46,7 +47,7 @@ $tagg2='</b>';
 math($tag1,$tag2,$param1,$param2);
 math('<h1>','</h1>',$param1,$param2);
 math($tagg,$tagg2,$param1,$param2);
-
+//task05
 function new_fun($parameter,$new1,$new2){
 	echo $new1;
 	$sum=0;
@@ -69,11 +70,13 @@ $arr2=range(20,50);
 echo "<pre>";
 print_r($arr);
 echo "</pre>";
+echo "сбора от елементите който индекси са четни е :";
 new_fun($arr,$new1,$new2);
 
 echo "<pre>";
 print_r($arr2);
 echo "</pre>";
+echo "сбора от елементите който индекси са четни е :";
 new_fun($arr2,$new1,$new2);
 
 
