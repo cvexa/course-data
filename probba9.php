@@ -1,6 +1,6 @@
 <?php header('content-type:text/html; charset=utf-8');
 
-//task02
+//task01
 function print_calc($a, $b){
 	$num=$a+$b;
 	
@@ -70,13 +70,13 @@ $arr2=range(20,50);
 echo "<pre>";
 print_r($arr);
 echo "</pre>";
-echo "сбора от елементите който индекси са четни е :";
+echo "Сбора от елементите който индекси са четни е :";
 new_fun($arr,$new1,$new2);
 
 echo "<pre>";
 print_r($arr2);
 echo "</pre>";
-echo "сбора от елементите който индекси са четни е :";
+echo "Сбора от елементите който индекси са четни е :";
 new_fun($arr2,$new1,$new2);
 
 
