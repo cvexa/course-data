@@ -66,6 +66,7 @@ for ($p=0; $p < $m; $p++) {
 }
 echo "</tr>";
 }
+echo "</table>";
 ?>
 </body>
 </html>
