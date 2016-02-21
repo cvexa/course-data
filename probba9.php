@@ -38,7 +38,7 @@ for ($i=$param1; $i >= $param2 ; $i--) {
 $tag1='<p>';
 $tag2='</p>';
 $param1=42;
-$param2=3;
+$param2=100;
 $tagg='<b>';
 $tagg2='</b>';
 
@@ -46,6 +46,28 @@ $tagg2='</b>';
 math($tag1,$tag2,$param1,$param2);
 math('<h1>','</h1>',$param1,$param2);
 math($tagg,$tagg2,$param1,$param2);
+
+function new_fun($parameter,$new1,$new2){
+	echo $new1;
+	$sum=0;
+	foreach ($parameter as $key => $value) {
+if ($key % 2 == 0){
+$sum+=$value;
+
+
+}
+}
+echo $sum;
+echo $new2;
+}
+$arr = range(1,10);
+	sort($arr);
+	print_r($arr);
+$new1='<p>';
+$new2='</p>';
+
+
+new_fun($arr,$new1,$new2);
 
 
 
