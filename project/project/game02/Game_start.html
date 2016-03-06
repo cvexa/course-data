@@ -1,0 +1,47 @@
+<?php
+
+
+
+?>
+<!html>
+<head>
+<title>test</title>
+<meta charset="UTF-8">
+<link href="css/style1.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+
+
+<div id='start'>
+	<form action="Game_code.php" method="post">
+		<p><b>Аз ще скрия <img src="img/win.png" height='100' weight='100'> ти опитай да го намериш!</b></p>
+		<p><b><div id='warning' class="alert alert-info">Избери една от трите кутии и опитай да познаеш къде ще скрия монетата /кликни на една и натисни бутона Намери!/</div></b></p>
+    
+        
+    	<input type='radio' name="cup" value="1" id='cup1'><label for='cup1'><img src="img/cup.png" height="200" weight="200"></label>
+    	<input type='radio' name="cup" value="2" id='cup2'><label for='cup2'><img src="img/cup.png" height="200" weight="200"></label>
+    	<input type='radio' name="cup" value="3" id='cup3'><label for='cup3'><img src="img/cup.png" height="200" weight="200"></label>
+        
+        
+    <p><input type="submit" class="btn btn-primary btn-lg" name="submit" value="Намери!"></p>
+	</form>
+	<p><b><div id='warning' class="alert alert-info"> УСПЕХ !Търсим :</div></b><p>
+		<p><img src='img/win_cup.png' height='200' weight='200'></p>
+		
+	</div>
+
+<div id='footer'>
+	Cvexa 2016
+</div>	
+</body>
+</html>

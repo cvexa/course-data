@@ -1,0 +1,24 @@
+body{
+	padding: 0;
+	margin:0;
+background-image: url(bg.jpg);
+background-size: 100% auto;
+
+
+}
+#gamecode{
+	text-align: center;
+}
+#victory{
+	font-size: 40;
+	color:red;
+}
+#no{
+	font-size: 40;
+	color: red;
+}
+#please{
+	color:red;
+	font-weight: bold;
+	font-size: 60;
+}
