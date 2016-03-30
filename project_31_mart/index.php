@@ -45,19 +45,8 @@ echo "</div></div></p>";
 		echo $row['user_name']." ----- ".$row['lvl']." ----- ".$row['score'];
 		echo "</div></div>";
 		}
-
-		
-		
-	
-		
-
-      
-        
-
-	
-
-
 }
+
 ?>
 
 	

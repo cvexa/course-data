@@ -23,7 +23,7 @@ $number_1 = $_POST['number_1'];
 				echo "<div class='row'>
 	<div class='alert alert-success col-xs-4 
 		col-xs-offset-4 text-center'>";
-				echo "Успешно добавихте $number_1 $symbol $number_2   = $result в базата данни!";
+				echo "$user Успешно добавихте $number_1 $symbol $number_2   = $result в базата данни!";
 				echo "<p><a href='read.php'>Реши качена от друг ? </a></p>";
 				echo "</div></div>";
 			}else{

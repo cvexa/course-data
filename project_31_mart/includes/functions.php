@@ -6,4 +6,8 @@ function input($id,$type,$name,$place){
 function submit($value,$class){
 	echo "<input type='submit' name='submit' value='$value' class='$class'>";
 }
+
+function clock(){
+	
+}
 ?>
