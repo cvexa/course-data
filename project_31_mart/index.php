@@ -27,7 +27,7 @@ $read_result = mysqli_query($conn, $read_query);
 echo "<p><div class='row'>
 	<div class='alert alert-success col-xs-4 
 		col-xs-offset-4 text-center'>";
-echo "<p>Последните 4 записани в Резултатите:";
+echo "<p>Последните 5 записани в Резултатите:";
 echo "</div></div></p>";
 
 	if (mysqli_num_rows($read_result) > 0) {
