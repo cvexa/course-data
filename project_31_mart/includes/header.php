@@ -28,7 +28,7 @@ integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7
 		<div  class="col-xs-12 col-centered text-center">
 		<ul>
 			<a href="index.php"><button type="button" class="btn btn-warning"><li>Начало</li></button></a>
-			<a href="index.php"><button type="button" class="btn btn-warning"><li>За проекта</li></button></a>
+			<a href="about.php"><button type="button" class="btn btn-warning"><li>За проекта</li></button></a>
 			<a href="admin.php"><button type="button" class="btn btn-warning"><li>Админ Панел</li></button></a>
 
 		</ul>
