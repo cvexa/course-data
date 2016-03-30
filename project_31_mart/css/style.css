@@ -1,0 +1,64 @@
+body,html,div{
+margin:0;
+padding: 0;
+}
+body{
+	background-image: url(img/bg_index.jpg);
+	background-repeat: ;
+}
+
+#hello{
+	text-align: center;
+	border: solid 2px;
+	margin-top: 10%;
+}
+
+#foot{
+	text-align: center;
+	padding-left: 70%;
+	padding-right: 80px;
+	position:absolute;
+    bottom:0;
+    width:100%;
+    height:100px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+	background-image: url(img/footer_1.png);
+
+}
+#login{
+	text-align: center;
+}
+#nav{
+   
+    margin-top: 1%;
+	
+}
+
+li{
+	display:inline-block;
+
+
+
+}
+a{
+	text-decoration: none;
+
+}
+#deny{
+	
+	margin-top: 10%;
+	text-align: center;
+
+}
+#success{
+	
+	margin-top: 5%;
+	text-align: center;
+
+
+}
+#dif{
+	position:absolute;
+	display:inline-block;
+}
