@@ -13,8 +13,8 @@ $sumfake=$_SESSION['faill'];
 
 $chose="yess";
 $chose2="no";
-if(!isset($_GET['perimeter'])){
-if ($_GET['perimeter'] == $chose & $show == $true) {
+
+if($_GET['perimeter'] == $chose & $show == $true) {
 	$score_lvl2+=10;
 	$_SESSION['score2']=$score_lvl2;
 	echo "<div class='row'>
@@ -102,7 +102,7 @@ if ($_GET['perimeter'] == $chose & $show == $true) {
 		</div>";
     echo $score_lvl2;
 }
-}
+
 
 
 

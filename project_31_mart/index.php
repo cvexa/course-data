@@ -19,6 +19,47 @@
         </div>
 	</div>
 
+	<?php
+	$conn = mysqli_connect('localhost', 'root', '', 'math');
+
+$read_query = 	"SELECT user_name, lvl, score FROM scoreboard where date_deleted is null ORDER BY id_score DESC LIMIT 5";
+$read_result = mysqli_query($conn, $read_query);
+echo "<p><div class='row'>
+	<div class='alert alert-success col-xs-4 
+		col-xs-offset-4 text-center'>";
+echo "<p>Последните 4 записани в Резултатите:";
+echo "</div></div></p>";
+
+	if (mysqli_num_rows($read_result) > 0) {
+	
+		while($row = mysqli_fetch_assoc($read_result)){
+		
+        echo "<div class='row'>
+	<div class='alert alert-success col-xs-4 
+		col-xs-offset-4 text-center'>";
+		
+			
+		
+        echo "<p>Име - Ниво - Точки</p>";
+		
+		echo $row['user_name']." ----- ".$row['lvl']." ----- ".$row['score'];
+		echo "</div></div>";
+		}
+
+		
+		
+	
+		
+
+      
+        
+
+	
+
+
+}
+?>
+
 	
 	<?php
 	include_once('includes/footer.php');

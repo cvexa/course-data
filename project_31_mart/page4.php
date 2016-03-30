@@ -59,6 +59,7 @@ if ($_GET['onelvl'] == $true) {
 
 
 $_SESSION['true']=$twosum;
+$_SESSION['score']=$score;
 
 
 
