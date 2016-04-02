@@ -25,7 +25,7 @@
 $read_query = 	"SELECT user_name, lvl, score FROM scoreboard where date_deleted is null ORDER BY id_score DESC LIMIT 5";
 $read_result = mysqli_query($conn, $read_query);
 echo "<p><div class='row'>
-	<div class='alert alert-success col-xs-4 
+	<div id='five' class='alert alert-success col-xs-4 
 		col-xs-offset-4 text-center'>";
 echo "<p>Последните 5 записани в Резултатите:";
 echo "</div></div></p>";
@@ -46,6 +46,7 @@ echo "</div></div></p>";
 		echo "</div></div>";
 		}
 }
+
 
 ?>
 

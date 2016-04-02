@@ -24,11 +24,11 @@ $shuff=shuffle($fake);
 echo "<div class='row'>
 	<div class='alert alert-success col-xs-4 
 		col-xs-offset-4 text-center'>
-		<p>Браво <b>$user</b> , позна правилно ,това е нова задачка за теб:</p>
+		<p>Браво <b>$user</b> , позна правилно ,това е нова задачка:</p>
 		Нека дължината на страната на квадрата е $side . Квадрата има 4 равни страни, значи ще намеря периметъра 
-		му така : $side+$side+$side+$side = $fake[0] !Това твърдение вярно ли е ? 
+		му така :<p> $side+$side+$side+$side = $fake[0] !Това твърдение вярно ли е ?</p> 
 		 <p><form action='page4_2.php' action='get'>
-  <input type='radio' name='perimeter' value='yess'>ДА
+  <input type='radio' name='perimeter' value='yess' checked>ДА
   <input type='radio' name='perimeter' value='no'>НЕ
   
   <p><input type='submit' name='submit' value='избери'></p>
@@ -46,11 +46,11 @@ $shuff=shuffle($fake);
 	echo "<div class='row'>
 	<div class='alert alert-success col-xs-4 
 		col-xs-offset-4 text-center'>
-		<p>Съжалявам <b>$user</b> , не позна правилно ,това е нова задачка за теб:</p>
+		<p>Съжалявам <b>$user</b> , не позна правилно ,това е нова задачка:</p>
 		Нека дължината на страната на квадрата е $side . Квадрата има 4 равни страни, значи ще намеря периметъра 
-		му така : $side+$side+$side+$side = $fake[0] !Това твърдение вярно ли е ? 
+		му така :<p> $side+$side+$side+$side = $fake[0] !</p><p>Това твърдение вярно ли е ?</p> 
 		 <p><form action='page4_2.php' action='get'>
-  <input type='radio' name='perimeter' value='yess'>ДА
+  <input type='radio' name='perimeter' value='yess' checked>ДА
   <input type='radio' name='perimeter' value='no'>НЕ
   
   <p><input type='submit' name='submit' value='избери'></p>

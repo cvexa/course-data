@@ -11,7 +11,7 @@ $finaltrue=$_SESSION['true'];
 if ($_GET['square'] == $finaltrue) {
 	$final1++;
 	echo "<div class='row'>
-	<div class='alert alert-success col-xs-4 
+	<div class='alert alert-success col-xs-5 
 		col-xs-offset-4 text-center'>
 		<p>Браво <b>$user</b> верен отговор, резултатът ти от  1-во ниво с верни отговори е<p><b>$final1 /4</b>!!!</p></p>
 		<p>Да запиша ли резултата ти в таблицата с резултати за 1-во нива ? </p>
@@ -23,7 +23,7 @@ if ($_GET['square'] == $finaltrue) {
 		</div>";
 }else{
 	echo "<div class='row'>
-	<div class='alert alert-success col-xs-4 
+	<div class='alert alert-success col-xs-5 
 		col-xs-offset-4 text-center'>
 		<p>Съжалявам , <b>$user</b> грешен отговор и резултатът ти  от 1-во ниво с верни отговори е <p>имаш <b>$final1 /4</b>!!!</p></p>
 		<p>Да запиша ли резултата ти в таблицата с резултати за 1-во нива ? </p>

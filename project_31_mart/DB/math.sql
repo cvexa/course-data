@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 30, 2016 at 11:34 PM
+-- Generation Time: Apr 03, 2016 at 12:04 AM
 -- Server version: 10.1.8-MariaDB
 -- PHP Version: 5.6.14
 
@@ -23,6 +23,42 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `added`
+--
+
+CREATE TABLE `added` (
+  `add_id` int(11) NOT NULL,
+  `added_by` varchar(100) NOT NULL,
+  `date_deleted` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `added`
+--
+
+INSERT INTO `added` (`add_id`, `added_by`, `date_deleted`) VALUES
+(1, 'koko', NULL),
+(2, 'maskota', NULL),
+(3, 'lomo', NULL),
+(4, 'lomo', NULL),
+(5, 'asdasd', NULL),
+(6, 'kioto', NULL),
+(7, 'zombiii', NULL),
+(8, 'zombi2', NULL),
+(9, 'yolo', NULL),
+(10, 'yolo', NULL),
+(11, 'Admin', NULL),
+(12, 'Admin', NULL),
+(13, 'Admin', NULL),
+(14, 'Admin', NULL),
+(15, 'sambo', NULL),
+(16, 'sambo$asd/', NULL),
+(17, 'miracast', NULL),
+(18, 'Admin', NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `lvl3`
 --
 
@@ -33,6 +69,7 @@ CREATE TABLE `lvl3` (
   `number_2` int(11) NOT NULL,
   `result` varchar(100) NOT NULL,
   `added_by` varchar(100) NOT NULL,
+  `approve` varchar(100) DEFAULT 'wait',
   `date_deleted` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -40,14 +77,18 @@ CREATE TABLE `lvl3` (
 -- Dumping data for table `lvl3`
 --
 
-INSERT INTO `lvl3` (`id_math`, `number_1`, `symbol`, `number_2`, `result`, `added_by`, `date_deleted`) VALUES
-(2, 10, '*', 50, '500', 'admin', NULL),
-(5, 50, '/', 2, '25', 'admin\r\n', NULL),
-(6, 11, '+', 11, '22', 'axaxax', NULL),
-(7, 100, '-', 50, '50', 'asdasd', NULL),
-(8, 2000, '+', 1, '2001', 'asdasd', NULL),
-(11, 202, '-', 2, '200', 'thfghfgh', NULL),
-(12, 12, '+ - ', 1, '12', 'sf32', NULL);
+INSERT INTO `lvl3` (`id_math`, `number_1`, `symbol`, `number_2`, `result`, `added_by`, `approve`, `date_deleted`) VALUES
+(2, 10, '*', 50, '500', 'lomo', 'ok', NULL),
+(32, 1, '+', 1, '2', 'lomo', 'DELETED', '2016-04-02'),
+(33, 100, '+', 1, '101', 'kioto', 'DELETED', '2016-04-02'),
+(34, 50, '/', 5, '10', 'zombiii', 'ok', NULL),
+(35, 100, '(-1)+', 100, '199', 'zombi2', 'ok', NULL),
+(39, 11, '+', 100, '111', 'Admin', 'DELETED', '2016-04-02'),
+(40, 11, '+', 100, '111', 'Admin', 'DELETED', '2016-04-02'),
+(41, 9, '*', 1, '9', 'Admin', 'ok', NULL),
+(43, 1, '12', 1, '1', 'sambo$asd/', 'DELETED', '2016-04-02'),
+(44, 9, '+(1)-', 1, '9', 'miracast', 'wait', NULL),
+(45, 8, '+', 8, '16', 'Admin', 'ok', NULL);
 
 -- --------------------------------------------------------
 
@@ -75,11 +116,21 @@ INSERT INTO `scoreboard` (`id_score`, `user_name`, `lvl`, `score`, `date_deleted
 (15, 'random_', 2, 3, NULL),
 (16, 'Kokolino', 1, 1, NULL),
 (17, 'Star_34', 2, 2, NULL),
-(18, 'Lady_dark', 1, 0, NULL);
+(18, 'Lady_dark', 1, 0, NULL),
+(20, 'sve', 0, 0, '2016-04-01'),
+(21, 'probba', 1, 2, NULL),
+(22, 'simbat', 2, 2, NULL);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `added`
+--
+ALTER TABLE `added`
+  ADD PRIMARY KEY (`add_id`),
+  ADD KEY `added_by` (`added_by`);
 
 --
 -- Indexes for table `lvl3`
@@ -90,7 +141,8 @@ ALTER TABLE `lvl3`
   ADD KEY `symbol` (`symbol`),
   ADD KEY `number_2` (`number_2`),
   ADD KEY `result` (`result`),
-  ADD KEY `added_by` (`added_by`);
+  ADD KEY `added_by` (`added_by`),
+  ADD KEY `approve` (`approve`);
 
 --
 -- Indexes for table `scoreboard`
@@ -106,15 +158,20 @@ ALTER TABLE `scoreboard`
 --
 
 --
+-- AUTO_INCREMENT for table `added`
+--
+ALTER TABLE `added`
+  MODIFY `add_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+--
 -- AUTO_INCREMENT for table `lvl3`
 --
 ALTER TABLE `lvl3`
-  MODIFY `id_math` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_math` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 --
 -- AUTO_INCREMENT for table `scoreboard`
 --
 ALTER TABLE `scoreboard`
-  MODIFY `id_score` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_score` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

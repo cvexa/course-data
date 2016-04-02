@@ -55,6 +55,7 @@ echo "<div class='row'>
 Ако дължините на страните при основата са с дължина $fig1 и $fig2 третия ръб е $fig3, намерете обема :
 		 <p><form action='page3_2.php' action='get'>
   <input type='number' name='obem' placeholder=' ? '>
+  <p><i>ако не попълниш нищо отговора се счита за грешен </i></p>
   
   <p><input type='submit' name='submit' value='избери'></p>
 </form></p> 
@@ -71,8 +72,8 @@ echo "<div class='row'>
 	echo "<form action='create.php' method='post'>";
     echo "<p>Въведи едно число:";
 	echo "<input type='number' name='number_1'></p>";
-	echo "<p>Въведи знак:";
-	echo "<input type='text' name='symbol'>/примерно: + , - , * , / , .....</p>";
+	echo "<p>Въведи знак/или други операции:";
+	echo "<input type='text' name='symbol'>/*примерно: + , - , * , / , () ,...</p>";
 	echo "<p>Въведи едно число:";
 	echo "<input type='number' name='number_2'><p>";
 	echo "<p>Въведи решението:";
@@ -80,6 +81,7 @@ echo "<div class='row'>
 
 	echo "<p><input type='submit' name='submit' value='insert'></p>";
 	echo "</form>";
+	echo "<p>Още примери: <img src='img/x2.png'> <img src='img/x3.png'><p></p><img src='img/x4.png'> ....</p>";
 	echo "</div>
 		</div>";
 

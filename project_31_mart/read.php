@@ -8,7 +8,7 @@ $user=$_SESSION['user'];
 
 $conn = mysqli_connect('localhost', 'root', '', 'math');
 
-$read_query = 	"SELECT number_1,symbol,number_2,result,added_by FROM lvl3 ORDER BY rand() LIMIT 1 ";
+$read_query = 	"SELECT number_1,symbol,number_2,result,added_by FROM lvl3 WHERE date_deleted is null and approve like '%ok%'ORDER BY rand() LIMIT 1 ";
 $read_result = mysqli_query($conn, $read_query);
 
 
