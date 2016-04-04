@@ -24,10 +24,12 @@ function check_files(){
 		 for ($i=0; $i < $counter; $i++) { 
 		 	echo "<p>".$files[$i]." + "."</p>";
 		 }
-		 if ($counter == 25) {
-		 	echo "Всички нужни файлове са налични!";
+		 if ($counter == 26) {
+		 	echo "<div class='alert alert-success'>Всички нужни файлове са налични!</div>";
+		 }elseif($counter > 26){
+            echo "<div class='alert alert-danger'>Има повече файлове които надхвърлят, оригиналния брои за проекта !</div>";
 		 }else{
-		 	echo "Липсват файлове, проложението може да не работи както трябва....";
+		 	echo "<div class='alert alert-danger'>Липсват файлове, проложението може да не работи както трябва....</div>";
 		 }
 	
 	

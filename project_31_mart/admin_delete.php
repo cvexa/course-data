@@ -24,14 +24,14 @@ if ($delete_result) {
 	<div class='alert alert-success col-xs-4 
 		col-xs-offset-4 text-center'>";		
 		echo "Успешно изтрихте този запис от базата данни!";
-		echo "<p><a href='admin.php'>Read DB</a></p>";
+		echo "<p><a href='admin_logged_in.php'>Read DB</a></p>";
 		echo "</div></div>";
 	}else{
 		echo "<div class='row'>
 	<div class='alert alert-success col-xs-4 
 		col-xs-offset-4 text-center'>";	
 		echo "Неуспешно изтриване на запис в базата данни! Моля опитайте по-късно!";
-		echo "<p><a href='admin.php'>Read DB</a></p>";
+		echo "<p><a href='admin_logged_in.php'>Read DB</a></p>";
 		echo "</div></div>";
 	}
 

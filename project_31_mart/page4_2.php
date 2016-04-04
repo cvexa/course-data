@@ -15,12 +15,12 @@ $chose="yess";
 $chose2="no";
 
 if($_GET['perimeter'] == $chose & $show == $true) {
-	$score_lvl2+=10;
+	$score_lvl2+=1;
 	$_SESSION['score2']=$score_lvl2;
 	echo "<div class='row'>
 	<div class='alert alert-success col-xs-5 
 		col-xs-offset-4 text-center'>
-		<p>Браво <b>$user</b> , позна правилно ,това е нова задачка за теб:</p>
+		<p>Браво <b>$user</b> ,  позна правилно ,това е нова задачка за теб:</p>
 		<p>Довърши изречението правилно като избереш от опциите :</p>
 		<form action='page5_2.php' method='get'>
 		<p>Остър ъгъл - по-малък от 
@@ -45,12 +45,12 @@ if($_GET['perimeter'] == $chose & $show == $true) {
 		</div>
 		</div>";
 }elseif ($_GET['perimeter'] == $chose2 & $show == $sumfake) {
-	$score_lvl2+=10;
+	$score_lvl2+=1;
 	$_SESSION['score2']=$score_lvl2;
 	echo "<div class='row'>
 	<div class='alert alert-success col-xs-5 
 		col-xs-offset-4 text-center'>
-		<p>Браво <b>$user</b> , позна правилно ,това е нова задачка за теб:</p>
+		<p>Браво <b>$user</b> ,  позна правилно ,това е нова задачка за теб:</p>
 		<p>Довърши изречението правилно като избереш от опциите :</p>
 		<form action='page5_2.php' method='get'>
 		<p>Остър ъгъл - по-малък от 
@@ -74,7 +74,7 @@ if($_GET['perimeter'] == $chose & $show == $true) {
 </form>
 		</div>
 		</div>";
-    echo $score_lvl2;
+    
 }else{
 	echo "<div class='row'>
 	<div class='alert alert-success col-xs-4 
@@ -102,7 +102,7 @@ if($_GET['perimeter'] == $chose & $show == $true) {
 </form>
 		</div>
 		</div>";
-    echo $score_lvl2;
+    
 }
 
 

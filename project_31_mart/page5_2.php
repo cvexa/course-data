@@ -12,7 +12,7 @@ $gradus=90;
 
 
 if ($_GET['corners'] == $corners & $_GET['gradus'] == $gradus) {
-	$score_lvl2+=10;
+	$score_lvl2+=1;
 	$_SESSION['score2']=$score_lvl2;
 	echo "<div class='row'>
 	<div class='alert alert-success col-xs-4 
@@ -29,6 +29,7 @@ if ($_GET['corners'] == $corners & $_GET['gradus'] == $gradus) {
 		</div>
 		</div>";
 		
+		
 }else{
 	echo "<div class='row'>
 	<div class='alert alert-success col-xs-4 
@@ -44,6 +45,7 @@ if ($_GET['corners'] == $corners & $_GET['gradus'] == $gradus) {
 		 <p><i>ако не попълниш нищо отговора се счита за грешен </i></p>
 		</div>
 		</div>"; 
+
 	
 }
 

@@ -34,8 +34,8 @@ if (empty($_POST['user_name'])) {
 
 		echo "</div>";
 		echo "<div class='row'>
-	<div id='dif' class='alert alert-success col-xs-3 
-		col-xs-offset-5'>Избери трудност:
+	<div id='dif' class='alert alert-success col-md-3 col-xs-3 col-sm-3
+		col-xs-offset-5 col-md-offset-5'>Избери трудност:
 		<form action='page3.php' method='get'>
 		<input type='range'  name='dificulty'  min='1' max='3'>
 		най-лесно &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; > средно &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >  най-трудно

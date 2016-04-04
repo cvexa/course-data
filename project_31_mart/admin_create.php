@@ -57,7 +57,7 @@ $number_1 = $_POST['number_1'];
 		col-xs-offset-4 text-center'>";
 				echo "Admin Успешно добавихте $number_1 $symbol $number_2   = $result в базата данни!";
 				
-				echo "<p><a href='admin.php'>Прегледай</a></p>";
+				echo "<p><a href='admin_logged_in.php'>Прегледай</a></p>";
 				echo "</div></div>";
 			}else{
 				echo "Неуспешно добавяне на запис в базата данни! Моля опитайте по-късно!";

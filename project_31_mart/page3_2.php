@@ -10,7 +10,7 @@ $score_lvl2=0;
 
 
 if ($_GET['obem'] == $formula) {
-	$score_lvl2+=10;
+	$score_lvl2+=1;
 	$_SESSION['score2']=$score_lvl2;
 
 	$side=rand(1,40);
@@ -35,7 +35,8 @@ echo "<div class='row'>
 </form></p> 
 </div>
 		</div>";
-		echo $score_lvl2;
+
+		
 }else{
 	$side=rand(1,40);
 	$sidesum=$side+$side+$side+$side;
@@ -57,7 +58,7 @@ $shuff=shuffle($fake);
 </form></p> 
 </div>
 		</div>";
-		echo $score_lvl2;
+		
 
 }
 

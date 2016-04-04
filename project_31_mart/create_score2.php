@@ -6,7 +6,7 @@ include_once('includes/header.php');
 <?php
 
 $user=$_SESSION['user'];
-$final_score=$_SESSION['score'];
+$final_score=$_SESSION['score2'];
 
 $conn = mysqli_connect('localhost', 'root', '', 'math');
 
