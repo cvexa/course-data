@@ -32,6 +32,8 @@ echo "<div class='row'>
 
 	echo "<p><a href='admin_logged_in.php'>Добре Дошъл !</a></p>";
 	echo "</div></div>";
+ $_SESSION['admin']=$admin;
+ $_SESSION['pass']=$pass;
 
 
 

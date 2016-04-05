@@ -1,7 +1,7 @@
 <?php
 
 include_once('includes/header.php');
-	session_start();
+	
 	?>
 
 <form action='admin2.php' method='post'>

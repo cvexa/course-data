@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 03, 2016 at 12:04 AM
+-- Generation Time: Apr 05, 2016 at 10:46 PM
 -- Server version: 10.1.8-MariaDB
 -- PHP Version: 5.6.14
 
@@ -54,7 +54,13 @@ INSERT INTO `added` (`add_id`, `added_by`, `date_deleted`) VALUES
 (15, 'sambo', NULL),
 (16, 'sambo$asd/', NULL),
 (17, 'miracast', NULL),
-(18, 'Admin', NULL);
+(18, 'Admin', NULL),
+(19, 'dl;fkmgdfg', NULL),
+(20, 'asdasdasd', NULL),
+(21, 'mambojambo', NULL),
+(22, 'dfgdfg', NULL),
+(23, 'yoga', NULL),
+(24, 'random_guy', NULL);
 
 -- --------------------------------------------------------
 
@@ -78,16 +84,16 @@ CREATE TABLE `lvl3` (
 --
 
 INSERT INTO `lvl3` (`id_math`, `number_1`, `symbol`, `number_2`, `result`, `added_by`, `approve`, `date_deleted`) VALUES
-(2, 10, '*', 50, '500', 'lomo', 'ok', NULL),
-(32, 1, '+', 1, '2', 'lomo', 'DELETED', '2016-04-02'),
-(33, 100, '+', 1, '101', 'kioto', 'DELETED', '2016-04-02'),
-(34, 50, '/', 5, '10', 'zombiii', 'ok', NULL),
-(35, 100, '(-1)+', 100, '199', 'zombi2', 'ok', NULL),
+(2, 10, '*', 50, '500', 'lomo', 'ok', '2016-04-05'),
+(32, 1, '+', 1, '2', 'lomo', 'easy', '2016-04-02'),
+(33, 100, '+', 1, '101', 'kioto', 'mm..ok', '2016-04-02'),
+(34, 50, '/', 5, '10', 'zombiiii', 'ok', '2016-04-05'),
+(35, 100, '(-1)+', 100, '199', 'zombi2', 'fine', '2016-04-05'),
 (39, 11, '+', 100, '111', 'Admin', 'DELETED', '2016-04-02'),
-(40, 11, '+', 100, '111', 'Admin', 'DELETED', '2016-04-02'),
-(41, 9, '*', 1, '9', 'Admin', 'ok', NULL),
-(43, 1, '12', 1, '1', 'sambo$asd/', 'DELETED', '2016-04-02'),
-(44, 9, '+(1)-', 1, '9', 'miracast', 'wait', NULL),
+(40, 11, '+', 100, '111', 'Admin', 'ok', '2016-04-02'),
+(41, 9, '*', 1, '9', 'Admin', 'DELETED', '2016-04-05'),
+(43, 1, '12', 1, '1', 'sambo$asd', 'DELETED', '2016-04-02'),
+(44, 9, '+(1)-', 1, '9', 'miracast', 'good_to_go', '2016-04-04'),
 (45, 8, '+', 8, '16', 'Admin', 'ok', NULL);
 
 -- --------------------------------------------------------
@@ -119,7 +125,13 @@ INSERT INTO `scoreboard` (`id_score`, `user_name`, `lvl`, `score`, `date_deleted
 (18, 'Lady_dark', 1, 0, NULL),
 (20, 'sve', 0, 0, '2016-04-01'),
 (21, 'probba', 1, 2, NULL),
-(22, 'simbat', 2, 2, NULL);
+(22, 'simbat', 2, 2, NULL),
+(23, 'asdasd', 2, 0, NULL),
+(24, 'asdasd', 2, 2, NULL),
+(25, 'asdasd', 2, 2, NULL),
+(26, 'asdasd', 2, 2, NULL),
+(27, 'asdasd', 2, 2, NULL),
+(28, 'kopo', 2, 3, NULL);
 
 --
 -- Indexes for dumped tables
@@ -161,17 +173,17 @@ ALTER TABLE `scoreboard`
 -- AUTO_INCREMENT for table `added`
 --
 ALTER TABLE `added`
-  MODIFY `add_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `add_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 --
 -- AUTO_INCREMENT for table `lvl3`
 --
 ALTER TABLE `lvl3`
-  MODIFY `id_math` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id_math` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 --
 -- AUTO_INCREMENT for table `scoreboard`
 --
 ALTER TABLE `scoreboard`
-  MODIFY `id_score` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id_score` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

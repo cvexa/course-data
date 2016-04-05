@@ -23,6 +23,7 @@ if (empty($_POST['submit'])) {
 	echo "<p>Въведи решението:";
 	echo "<input type='number' name='result'><p>";
     echo "<p><i>*задачата която качи админа е автоматично одобрена, и ще излиза за решаване от други</p></i>";
+    echo "<p><i>*статуса за одобрение става 'ок', а админа може да променя както иска одобрението(стига да не е 'wait' или 'DELETED')</p></i>";
 	echo "<p><input type='submit' name='submit' value='insert'></p>";
 	echo "</form>";
 	echo "<p>Още примери: <img src='img/x2.png'> <img src='img/x3.png'><p></p><img src='img/x4.png'> ....</p>";

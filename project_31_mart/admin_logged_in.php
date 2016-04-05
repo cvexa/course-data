@@ -17,7 +17,20 @@ $read_query = 	"SELECT * FROM lvl3
 $read_result = mysqli_query($conn, $read_query);
 
 echo "<table border='1'>";
-echo "<tr><td><b>Всички записи в DB с задачите качени от потребител</b></td></tr>";
+
+	echo "<tr><td>
+			<div class='alert alert-danger col-xs-10 col-md-10 col-xs-offset-1 col-md-offset-1'><a href='admin_logout.php'>ADMIN LOGOUT</a>
+			</div></td></tr>";
+
+echo "<tr><td>
+<div class='alert alert-success col-xs-10 col-md-10 col-xs-offset-1 col-md-offset-1'>
+			<a href='admin_create.php'>Добави в  DB</a>
+			</div></td><tr>";
+
+	echo "</div></div>";
+	echo "<tr>
+	<td><b>Всички записи в DB с задачите качени от потребител</b></td>
+	</tr>";
 	if (mysqli_num_rows($read_result) > 0) {
 		while($row = mysqli_fetch_assoc($read_result)){ 
 		echo '<tr><td><div class="alert alert-warning col-md-2 col-xs-1">НОМЕР 1= ['.$row['number_1']."] </div>"
@@ -49,7 +62,5 @@ echo "</table>";
 
 
 			
-			echo "<div class='alert alert-success col-xs-10 col-md-10 col-xs-offset-1 col-md-offset-1'>
-			<a href='admin_create.php'>Добави в  DB</a></div>";
-	echo "</div></div>";
+			
 	?>
