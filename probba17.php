@@ -17,8 +17,8 @@ function numbers(){
    }
 }
 function pass($pass){
-	$new=md5($pass);
-	echo $new;
+	echo md5($pass);
+	
 }
 
 
@@ -40,7 +40,9 @@ echo "<p><input type='password' name='password' placeholder='enter the pss...'><
 echo "<input type='submit' name='submit' value='go'>";
 echo "</form>";
 }else{
-pass($_POST['password']);   
+	echo "<pre>";
+pass($_POST['password']);
+echo "</pre>";   
 }
 
 ?>
