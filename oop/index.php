@@ -2,22 +2,27 @@
 
 class Tv{
 	var $size;
-	var $price;
+	private $price;
 
 	function __construct($siz,$pr){
 		$this->size =$siz;
 		$this->price =$pr;
 	}
+	public function __get($name){
+		echo "getting $name -";
+		return $this->$name;
+	}
 	function coupon(){
 		return $this->price -= 10;
 		// echo $this->price;
 	}
-	function two(){
-		$this->size -= 2;
+	 private function two(){
+		return $this->size -= 2;
 	}
 	 function print_info(){
 	 	echo '<p>size '.$this->size.' inc.</p>';
 	 	echo 'price '.$this->price.' $';
+	 	echo $Samsung->two();
 
 	 }
 }
@@ -29,8 +34,9 @@ $Samsung = new Tv(42,500);
 //  echo "</pre>";
 
 // $Samsung->print_info();
-echo $Samsung->coupon();
-$Samsung->two();
+// echo "<p>coupon - ".$Samsung->coupon()."</p>";
+
+echo $Samsung->price;
 
 // $philips = new Tv(50,9000);
 // // var_dump($philips);
