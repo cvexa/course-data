@@ -8,9 +8,15 @@ class Tv{
 		$this->size =$siz;
 		$this->price =$pr;
 	}
-	public function __get($name){
-		echo "getting $name -";
-		return $this->$name;
+	public function __get($price){
+		echo "getting $price -";
+		return $this->$price;
+	}
+	public function __set($name, $value){
+		echo "set $name to $value";
+		if (property_exists($this, $name)) {
+			$this->$name = $value;
+		}
 	}
 	function coupon(){
 		return $this->price -= 10;
@@ -37,6 +43,9 @@ $Samsung = new Tv(42,500);
 // echo "<p>coupon - ".$Samsung->coupon()."</p>";
 
 echo $Samsung->price;
+
+echo "<p>".$Samsung ->price."</p>";
+$Samsung->price = 1;
 
 // $philips = new Tv(50,9000);
 // // var_dump($philips);
