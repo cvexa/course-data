@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>getElementById example</title>
+  <script>
+  function changeColor(newColor) {
+    var elem = document.getElementById("para1");
+     elem.style.color = newColor;
+     elem.style.background = "grey";
+  }
+  </script>
+</head>
+<body>
+  <p id="para1">Some text here</p>
+  <button style="color:blue" onclick="changeColor('blue');">blue</button>
+  <button style="color:red"onclick="changeColor('red');">red</button>
+
+
+<form id="email_form" name="email_form" action="join.html" method="get">
+            <label for="email_address1">Email Address:</label>
+                <input type="text" id="email_address1" name="email_address1" value="I am input`s default value">
+                <span id="email_address1_error">*</span><br>
+
+            <label for="email_address2">Re-enter Email Address:</label>
+                <input type="text" id="email_address2" name="email_address2">
+                <span id="email_address2_error">*</span><br>
+
+            <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name">
+                <span id="first_name_error">*</span><br>
+
+            <label>&nbsp;</label>
+            <input type="button" id="join_list" value="Join our List">
+</form>
+
+<script>
+  var test = document.querySelectorAll('#email_form input');
+
+  var len = test.length;
+
+  for (var i = 0; i < test.length; i++) {
+    console.log(input[i].name);
+  };
+
+
+
+</script>
+</body>
+</html>

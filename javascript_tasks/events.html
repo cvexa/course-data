@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<head>
+	<title>events</title>
+</head>
+<body>
+
+	<img src="a.png" alt="A" width="200px" height="200px" onmouseout="restore()" onmouseover="change()">
+	<h1>Change me!</h1>
+
+	<script type="text/javascript">
+    function change(){
+
+    	var text = document.getElementsByTagName('h1')[0]
+    	var img = document.getElementsByTagName('img')[0];
+    	img.src = "b.jpg";
+    	text.innerHTML = "You did it !"
+}
+    function restore(){
+    	var img = document.getElementsByTagName('img')[0];
+    	var text = document.getElementsByTagName('h1')[0]
+    	img.src = "a.png";
+    	text.innerHTML = "Change me!"
+}
+	</script>
+</body>
+</html>

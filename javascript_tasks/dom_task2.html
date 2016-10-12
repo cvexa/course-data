@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<head>
+	<title>a new dom project</title>
+</head>
+<body>
+<!-- <div id="h1">hello</div> -->
+<script type="text/javascript">
+	var body = document.body;
+	var h1 = document.getElementById('h1');
+	console.log(h1);
+	// body.removeChild(h1);
+
+
+</script>
+<script type="text/javascript">
+	// var docfrag = document.createDocumentFragment();
+	// var ul = document.createElement('ul');
+	// ul.innerHTML = '';
+	// for (var i = 1; i < 11; i++) {
+	// 	ul.innerHTML+= '<li>Li number'+ i +'</li>';
+	// };
+	// console.log(ul);
+	// docfrag.appendChild(ul);
+	// document.body.appendChild(docfrag);
+
+
+</script>
+
+<div>first div</div>
+  <div>second div</div>
+  <div class="empty"></div>
+  <div>third div</div>
+<div>inner div</div>
+
+  <ul id="result"></ul>
+  <script>
+  var ul = document.createElement('ul');
+  var li = document.createElement('li');
+ 	var div = document.getElementsByTagName('div');
+ 	// console.log(div);
+ 
+ 	
+    console.log(ul);	
+ 	for (var i = 0; i < div.length; i++) {
+        li[i] = li.cloneNode(true);
+ 		li[i].innerHTML = div[i].innerHTML;
+ul.appendChild(li[i]);
+ 		
+ 	};
+ 	var docfrag = document.createDocumentFragment(); 
+ 	docfrag.appendChild(ul);
+   
+    document.body.appendChild(docfrag);
+
+
+ 	
+ 
+	
+
+	
+  </script>
+
+</body>
+</html>

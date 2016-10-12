@@ -1,0 +1,1 @@
+var xaxa = console.log(document.getElementById(xaxa));
