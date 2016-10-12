@@ -17,10 +17,48 @@
 }
     function restore(){
     	var img = document.getElementsByTagName('img')[0];
-    	var text = document.getElementsByTagName('h1')[0]
+    	var text = document.getElementsByTagName('h1')[0];
     	img.src = "a.png";
     	text.innerHTML = "Change me!"
 }
+	</script>
+
+	<button id="btn">Click</button>
+	<script type="text/javascript">
+	var button = document.getElementById('btn');
+	button.addEventListener('click',changeme2,false);
+    var flag = 1;
+	function changeme2(){
+		var img = document.getElementsByTagName('img')[0];
+    	var text = document.getElementsByTagName('h1')[0];
+    	if (flag) {
+    		img.src = "a.png";
+    	text.innerHTML = "Change me!"
+    	flag = 0;
+    	}else{
+        img.src = "b.jpg";
+    	text.innerHTML = "You did it !"
+    	flag = 1;
+    	};
+
+	}
+
+	// button.onclick = function clickmee(){
+	// 	var flag = 1;
+	// 	var img = document.getElementsByTagName('img')[0];
+	// 	var text = document.getElementsByTagName('h1')[0];
+
+	// 	if (flag) {
+	// 		img.src = "b.jpg";
+	// 		text.innerHTML = "You did it!"
+	// 		flag = 0;
+	// 		}else{
+	// 		img.src = "a.png";
+	// 		text.innerHTML = "Change me!"
+	// 		flag = 1;
+	// 		}
+
+	// }
 	</script>
 </body>
 </html>
