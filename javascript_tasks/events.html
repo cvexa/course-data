@@ -60,5 +60,28 @@
 
 	// }
 	</script>
+
+	<p><input id="the_input"type="textarea" name="inputtext" placeholder="enter some text..">
+	<button id="second_btn" onclick="validate()">VALIDATE</button></p>
+	<script type="text/javascript">
+    function validate(){
+    	var inputtext = document.getElementById('the_input');
+    	var new_div = document.createElement('div');
+    	// console.log(new_div);
+    	
+    	var input_content = inputtext.value;
+
+
+    	new_div.innerHTML = input_content;
+    	new_div.style.backgroundColor = 'grey';
+   for (var i = 0; i < input_content.length; i++) {
+   	if(input_content[i] = '@'){
+   		new_div.style.backgroundColor = 'blue';
+   	}
+   };
+document.body.appendChild(new_div);
+    	
+    }
+	</script>
 </body>
 </html>
