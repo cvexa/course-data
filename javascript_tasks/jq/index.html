@@ -5,19 +5,33 @@
 </head>
 <body>
     <div>
-        <ul id="list">
-            <li><a href=""></a>a</li>
-               <li><a href=""></a>b</li>
-                  <li><a href=""></a>c</li>
-                     <li><a href=""></a>d</li>
-                        <li><a href=""></a>e</li>
-
-        </ul>
+       
+        <h2>The image</h2>
+   
+    <div id="image_list">
+    <img src="img/b.jpg">
     </div>
     <script type="text/javascript">
+    
     $(document).ready(
- $('#list li a').on('click', function())
-        );
+        function src(){
+
+    var img_src = $('img').attr('src');
+    var h1 = $('<h1>');
+    h1.class = 'headings';
+    h1.text("Wellcome");
+    h1.prependTo('h2')
+    var image_list = $('img').parents('#image_list');
+    image_list.css('border','solid 2px red')
+
+    console.log(image_list);
+    
+    // console.log(img_src);
+    
+    // img_src = 'img/a.png';
+    // var new_img = $('img').attr('src',  img_src)
+    // new_img.css('border','solid 2px red');
+ });
     </script>
 
 
