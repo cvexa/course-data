@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<head>
+	<title>events</title>
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+
+	<input id = "first" type = "text" name = "the_input" value="im here">
+	<script type="text/javascript">
+    $(function (){
+    		//var input = $('first').val();
+$('#first').focus(function(){
+	$(this).val('im not here');
+});//end of event
+$('#first').hover(function(){$(this).val('click me')})   
+$('#first').mouseout(function(){$(this).val('im here')}) 		
+    	}
+    );
+	</script>
+</body>
+</html>
